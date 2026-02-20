@@ -85,7 +85,7 @@ export default function AboutPage() {
         {/* Scrolling Content */}
         <div className="md:w-2/3 space-y-12 md:space-y-24 text-xl md:text-4xl font-light leading-snug text-zinc-100">
           <p className="story-text">
-            I am a student of <span className="text-white font-serif italic">Management</span> at Dhaka Central University, pursuing my BBA.
+            I am a student of <span className="text-white font-serif italic">Computer Science and Technology</span> at Dhaka Polytechnic Institute, pursuing my Diploma.
           </p>
 
           <p className="story-text">
@@ -132,7 +132,7 @@ export default function AboutPage() {
       {/* 4. BIG TEXT FOOTER */}
       <section className="px-6 md:px-20 py-20 md:py-40 flex items-center justify-center">
           <h2 className="text-4xl md:text-9xl font-black text-center opacity-10">
-              INJAM <br /> HOSSAN
+              RIYAZUL <br /> ISLAM
           </h2>
       </section>
 

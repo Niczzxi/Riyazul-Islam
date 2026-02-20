@@ -15,7 +15,7 @@ export default function Footer() {
 
           {/* Brand */}
           <div className="flex flex-col items-center md:items-start gap-4">
-            <h2 className="text-3xl font-bold text-white tracking-wide">Injam H.</h2>
+            <h2 className="text-3xl font-bold text-white tracking-wide">Riyazul I.</h2>
           </div>
 
           {/* Navigation */}

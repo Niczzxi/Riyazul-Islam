@@ -12,7 +12,7 @@ const unbounded = Unbounded({
 });
 
 export const metadata: Metadata = {
-  title: "Injam Hossan Mamun",
+  title: "Riyazul Islam",
   description: "Full Stack Developer",
 };
 

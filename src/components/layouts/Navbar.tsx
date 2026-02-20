@@ -57,7 +57,7 @@ export default function Navbar() {
                 ${isLightMode ? "text-black" : "text-white"}
               `}
             >
-                Injam H.
+                Riyazul I.
             </Link>
         </div>
 

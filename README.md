@@ -1,36 +1,43 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Riyazul Islam - Personal Portfolio
 
-## Getting Started
+Welcome to the official repository of my personal portfolio website. This project is a reflection of my passion for building premium, high-performance web applications with a focus on interactive design and seamless user experience.
 
-First, run the development server:
+## 🌟 Project Overview
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+This is not just a static site; it's a showcase of advanced frontend techniques and modern web development practices. The goal was to create a digital identity that feels "alive" through dynamic animations and a polished UI.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Key Features
+- **Immersive Animations**:
+  - Custom **GSAP** text reveals and timeline animations.
+  - Interactive **Canvas-based** mouse trail effects (Spark/Fire effect).
+  - Smooth page transitions and component reveals using **Framer Motion**.
+- **Modern UI/UX**:
+  - Glassmorphism design elements.
+  - Fully responsive layout optimized for mobile, tablet, and desktop.
+  - Custom dark mode aesthetic.
+- **Dynamic Content**:
+  - Integrated Project showcase with detailed views.
+  - "Preview CV" feature with embedded Google Drive viewer.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 🛠️ Technology Stack
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Built with the latest and greatest in the React ecosystem:
 
-## Learn More
+| Category | Technology |
+|----------|------------|
+| **Framework** | **Next.js 16** (App Router) |
+| **Language** | **TypeScript** |
+| **Styling** | **Tailwind CSS v4** |
+| **Animations** | **GSAP** (GreenSock) & **Framer Motion** |
+| **Database** | **MongoDB** & Mongoose |
+| **Icons** | React Icons |
 
-To learn more about Next.js, take a look at the following resources:
+## � Contact Me
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+I am always open to discussing new projects, creative ideas, or opportunities to be part of your visions.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- **Email**: riyazulislam.773@gmail.com
+- **Role**: Full-Stack Developer
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---
+*Designed & Developed by Riyazul Islam.*

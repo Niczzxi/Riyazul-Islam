@@ -10,16 +10,10 @@ import Footer from "@/components/layouts/Footer";
 import { FaArrowLeft, FaGithub, FaGlobe } from "react-icons/fa6";
 import { Project } from "@/types";
 
-export default function ProjectDetails({ params }: { params: Promise<{ slug: string }> }) {
-  const [slug, setSlug] = useState<string | null>(null);
+export default function ProjectDetails({ params }: { params: { slug: string } }) {
+  const slug = params.slug;
   const [project, setProject] = useState<Project | null>(null);
   const [loading, setLoading] = useState(true);
-
-  useEffect(() => {
-    params.then((resolvedParams) => {
-        setSlug(resolvedParams.slug);
-    });
-  }, [params]);
 
   useEffect(() => {
     if (!slug) return;
@@ -90,7 +84,7 @@ export default function ProjectDetails({ params }: { params: Promise<{ slug: str
 
                {/* Overview */}
                <p className="text-base sm:text-lg md:text-xl text-zinc-400 max-w-2xl leading-relaxed">
-                  {project.overview}
+                  {project.ProjectDetails}
                </p>
 
                {/* External Links */}
@@ -101,14 +95,14 @@ export default function ProjectDetails({ params }: { params: Promise<{ slug: str
                          Live Demo
                       </a>
                   )}
-                  {project.links.githubClient && (
-                      <a href={project.links.githubClient} target="_blank" rel="noopener noreferrer" className="flex items-center justify-center gap-2 px-6 py-3 rounded-full border border-zinc-700 text-white font-bold hover:bg-zinc-800 transition-colors text-sm sm:text-base">
+                  {project.links?.client && (
+                      <a href={project.links.client} target="_blank" rel="noopener noreferrer" className="flex items-center justify-center gap-2 px-6 py-3 rounded-full border border-zinc-700 text-white font-bold hover:bg-zinc-800 transition-colors text-sm sm:text-base">
                          <FaGithub />
                          Client Repo
                       </a>
                   )}
-                  {project.links.githubServer && (
-                      <a href={project.links.githubServer} target="_blank" rel="noopener noreferrer" className="flex items-center justify-center gap-2 px-6 py-3 rounded-full border border-zinc-700 text-white font-bold hover:bg-zinc-800 transition-colors text-sm sm:text-base">
+                  {project.links?.server && (
+                      <a href={project.links.server} target="_blank" rel="noopener noreferrer" className="flex items-center justify-center gap-2 px-6 py-3 rounded-full border border-zinc-700 text-white font-bold hover:bg-zinc-800 transition-colors text-sm sm:text-base">
                          <FaGithub />
                          Server Repo
                       </a>
@@ -151,16 +145,16 @@ export default function ProjectDetails({ params }: { params: Promise<{ slug: str
                <div className="space-y-6">
                   <h3 className="text-3xl font-bold">Project Details</h3>
                   <p className="text-zinc-400 text-lg leading-relaxed whitespace-pre-wrap">
-                     {project.description}
+                     {project.ProjectDetails}
                   </p>
                </div>
 
                {/* Features */}
-               {project.features && project.features.length > 0 && (
+               {project.keyFeatures && project.keyFeatures.length > 0 && (
                   <div className="space-y-6">
                      <h3 className="text-3xl font-bold">Key Features</h3>
                      <ul className="space-y-4">
-                        {project.features.map((feature, i) => (
+                        {project.keyFeatures.map((feature, i) => (
                            <li key={i} className="flex items-start gap-3 text-zinc-400">
                               <span className={`mt-2 w-1.5 h-1.5 rounded-full bg-purple-500 shrink-0`} ></span>
                               <span className="leading-relaxed">{feature}</span>
